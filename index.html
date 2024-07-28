@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Clicker+Script&family=Parisienne&family=Satisfy&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Englebert&family=Farsan&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Englebert&family=Farsan&family=Oregano:ital@0;1&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Englebert&family=Farsan&family=Oregano:ital@0;1&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Englebert&family=Farsan&family=Klee+One&family=Oregano:ital@0;1&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Englebert&family=Farsan&family=Kavivanar&family=Klee+One&family=Oregano:ital@0;1&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    
+    <title>Mis XVI - Alexa</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ANIMACIONES */
+        .fade-out {
+            animation: desvanecer 2s forwards;
+        }
+        .fade-in {
+            animation: aparecer 2.5s forwards;
+        }
+        @keyframes desvanecer {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes aparecerTexto {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        
+
+        .fondo-main {
+            background-image: url(https://mrwallpaper.com/images/hd/blank-white-vertical-panels-ay5ono23wmybfm6k.jpg);
+            background-size:repeat;
+        }
+        #fondocolor-main {
+            width: 100%;
+            height: 100vh;
+
+            display:flex;
+            background-color: rgba(255, 255, 255, 0.835);
+            align-items: center;
+        }
+
+        .tarjeta {
+            width:90%;
+            margin: 0% 5%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background-color: #fffbfa;
+        }
+        .tarjeta div{
+            text-align: center;
+        }
+        .separador {
+            width: 90%;
+            margin: 5%;
+            display: flex;
+            align-items: center;
+        }
+        #linea {
+            width: 35%;
+            height: 1px;
+            background-color: black;
+        }
+        #img-separador {
+            width:30%;
+        }
+        #img-separador img{
+            width:50%;
+        }
+
+
+        #adorno-superior {
+            margin-left:40%;
+            width: 60%;
+        }
+        #adorno-superior img{
+            width: 100%;
+        }
+        #adorno-inferior {
+            width: 60%;
+        }
+        #adorno-inferior img{
+            width: 100%;
+        }
+
+        #alex2 {
+            font-size: 4em;
+            margin-top: 0;
+
+            font-family: Sacramento;
+        }
+        #fecha1 {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+
+            font-family: Klee One;
+        }
+
+        #boton-abrir-invitacion button{
+            border-radius: 10px;
+            padding: 5% 10%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: rgb(241, 202, 223) 1px solid;
+            background-color: rgb(253,240,247);
+
+            font-size: 1.6em;
+            font-family: Oregano;
+        }
+
+
+
+
+
+
+
+
+
+
+        .container-flores {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .container-flores img {
+            width: 100%;
+            display: block;
+        }
+
+        .container-flores div {
+            position: absolute;
+            top: 49%;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            text-align: center;
+
+
+            font-family: Sacramento;
+        }
+
+        #alex {
+            font-size: 7.5vh;
+        }
+        #alex-abajo {
+            font-size: 3.5vh;
+        }
+
+
+
+        .fondo {
+            background-image: url(https://mrwallpaper.com/images/hd/blank-white-vertical-panels-ay5ono23wmybfm6k.jpg);
+            background-size:repeat;
+
+            display:none;
+        }
+        #fondocolor {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.835);
+            padding: 0% 0% 10% 0%;
+
+
+        }
+
+
+        #frase {
+            font-size: 1.3em;
+            padding: 5% 10%;
+            text-align: center;
+            font-style: italic;
+            line-height: 1.4em;
+
+
+            font-family: Klee One;
+        }
+
+        
+        
+    
+
+
+        .padres {
+            width: 90%;
+            margin: 15% 5% 15% 5%;
+            padding: 6% 5%;
+            position: relative;
+
+            text-align:Center;
+        }
+
+        .padres::before,
+        .padres::after {
+            content: '';
+            position: absolute;
+            border: 3px solid rgb(214, 189, 46);
+        }
+
+        .padres::before {
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 15%;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .padres::after {
+            bottom: 0;
+            right: 0;
+            width: 10%;
+            height: 15%;
+            border-left: none;
+            border-top: none;
+        }
+
+
+
+
+        .padrinos {
+            width: 90%;
+            margin: 15% 5% 15% 5%;
+            padding: 6% 5%;
+            position: relative;
+            text-align: center;
+            border: 1px solid transparent;
+        }
+
+        .padrinos::before,
+        .padrinos::after {
+            content: '';
+            position: absolute;
+            border: 3px solid rgb(214, 189, 46);
+        }
+
+        .padrinos::before {
+            top: 0;
+            right: 0;
+            width: 10%;
+            height: 15%;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .padrinos::after {
+            bottom: 0;
+            left: 0;
+            width: 10%;
+            height: 15%;
+            border-right: none;
+            border-top: none;
+        }
+
+
+        #titulo-padres {
+            width: 100%;
+            font-size: 2.8em;
+            font-weight: bold;
+            text-shadow: 0 0 30px rgb(160, 135, 219);
+
+            font-family: Clicker Script;
+
+            
+        }
+
+
+        #cont-padres{
+            font-size: 1.5em;
+
+            font-family: Klee One;
+        }
+
+
+        #padrinos {
+            text-align: center;
+        }
+        #titulo-container {
+            display: flex;
+            width: 90%;
+            margin: 0% 5% 5% 5%;
+            align-items: center;
+        }
+        #linea-separador {
+            width: 30%;
+        }
+        #linea-separador img{
+            width: 100%;
+        }
+
+        
+
+
+        #titulo-container-detalles {
+            display: flex;
+            width: 90%;
+            margin: 20% 5% 15% 5%;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        #cont-padres div{
+            margin-bottom: 7%;
+        }
+
+
+
+        #titulo-container-lugar {
+            display: flex;
+            width: 90%;
+            margin: 25% 5% 10% 5%;
+            align-items: center;
+            text-align: center;
+        }
+
+        #titulo-lugar {
+            width: 100%;
+            text-align: center;
+            font-size: 2.6em;
+            margin-top: 25%;
+            margin-bottom: 10%;
+        }
+
+        .tarjeta-lugar {
+            width: 90%;
+            margin: 0% 5%;
+            background-image: url(https://img.freepik.com/fotos-premium/textura-papel-tapiz-fondo-abstracto_524711-28.jpg?size=626&ext=jpg);
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding-top: 2.5%;
+            padding-bottom: 8%;
+        }
+
+        #misa-titulo {
+            text-align:center;
+            margin: 5% 0%;
+            font-size: 1.8em;
+            font-weight: bold;
+
+            font-family: Oregano;
+        }
+        #tarjetita-imagen {
+            width: 95%;
+            margin: 0% 2.5%;
+        }
+        #tarjetita-imagen img{
+            width: 100%;
+        }
+        #tarjetita-imagen div{
+            background-color: rgba(123, 124, 184, 0.141);
+            width: 100%;
+            padding: 5% 10%;
+            font-size: 1.5em;
+            text-align:Center;
+            
+            font-family: Dancing Script;
+        }
+
+        #datos {
+            width: 100%;
+            margin-top: 15%;
+            padding: 0% 10%;
+            font-size: 1.5em;
+            text-align:Center;
+
+            font-family: Kavivanar;
+        }
+        #parrafo1 {
+            margin-bottom: 10%;
+        }
+        #boton-ub {
+            margin: 0% 15%;
+            margin-top: 10%;
+            width: 70%;
+            
+        }
+        #boton-ub button {
+            width:100%;
+            padding: 10% 5%;
+            background-color: rgb(253,240,247);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+            border: rgb(241, 202, 223) 1px solid;
+
+            
+            font-size: 0.7em;
+            font-family: Verdana;
+        }
+
+        .tarjeta-lugar2 {
+            width: 90%;
+            margin: 0% 5%;
+            margin-top: 15%;
+            background-image: url(https://img.freepik.com/fotos-premium/textura-papel-tapiz-fondo-abstracto_524711-28.jpg?size=626&ext=jpg);
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding-top: 2.5%;
+            padding-bottom: 8%;
+        }
+
+
+        #imagen-winnie {
+            width: 50%;
+            margin: 0% 25%;
+            margin-top: 8%;
+            align-items: center;
+        }
+        #imagen-winnie img{
+            width: 100%;
+        }
+
+
+        
+        .vestimenta {
+            width: 90%;
+            margin: 0% 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6% 5%;
+            position: relative;
+        }
+
+        .vestimenta::before,
+        .vestimenta::after {
+            content: '';
+            position: absolute;
+            border: 3px solid rgb(214, 189, 46);
+        }
+
+        .vestimenta::before {
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 15%;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .vestimenta::after {
+            bottom: 0;
+            right: 0;
+            width: 10%;
+            height: 15%;
+            border-left: none;
+            border-top: none;
+        }
+        
+
+
+        #codigo-vestimenta {
+            width: 50%;
+            font-size: 2em;
+            text-align: center;
+
+            font-family: Oregano;
+        }
+
+        #separador-vertical {
+            height: 100px;
+            width: 1px;
+            background-color: black;
+            margin: 0 5%;
+        }
+
+        #codigo-vestimenta2 {
+            width: 49%;
+        }
+        #codigo-vestimenta2 img {
+            width: 100%;
+        }
+        #texto-formal {
+            margin-top: 7%;
+            text-align: center;
+            font-size: 1.2em;
+
+            font-family: Dancing Script;
+        }
+
+
+
+        .mesa {
+            width: 90%;
+            margin: 15% 5%;
+            align-items: center;
+            padding: 6% 2%;
+            position: relative;
+        }
+        .mesa::before,
+        .mesa::after {
+            content: '';
+            position: absolute;
+            border: 3px solid rgb(214, 189, 46);
+        }
+        .mesa::before {
+            top: 0;
+            left: 0;
+            width: 15%;
+            height: 15%;
+            border-right: none;
+            border-bottom: none;
+        }
+        .mesa::after {
+            bottom: 0;
+            right: 0;
+            width: 15%;
+            height: 15%;
+            border-left: none;
+            border-top: none;
+        }
+
+    
+        #titulo-mesa {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10%;
+
+            font-family: Oregano;
+        }
+        #mesa-descripcion {
+            width: 95%;
+            margin: 0% 2.5%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #frase-regalos {
+            text-align: center;
+            width: 69%;
+            font-size: 1.2em;
+
+            font-family: Klee One;
+        }
+        #imagen-regalo {
+            width: 30%;
+            text-align: center;
+        }
+        #imagen-regalo img{
+            width: 100%;
+        }
+
+
+
+
+        #boton-regalos {
+            width: 60%;
+            margin: 10% 20% 0% 20%;
+        }
+        #boton-regalos a button {
+            width:100%;
+            padding: 10% 0%;
+            border-radius: 10px;
+            border: rgb(241, 202, 223) 1px solid;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: rgb(253,240,247);
+
+
+            font-size: 1.2em;
+            font-family: Verdana;
+        }
+
+
+
+
+
+        #separador-final {
+            width:90%;
+            margin: 30% 5% 0% 5%;
+            text-align:Center;
+        }
+        #separador-final img{
+            width:80%;
+        }
+        #nota-pie {
+            width: 100%;
+            padding: 10% 5%;
+            text-align: center;
+            font-size: 2em;
+
+            font-family: Oregano;
+        }
+        #alex3 {
+            margin-top:5%;
+            text-align: center;
+            font-size: 3em;
+            
+            font-family: Sacramento;
+        }
+
+        .separador-final-imagen {
+            display:flex;
+            align-items: center;
+
+            width: 70%;
+            margin: 0% 15%;
+        }
+        .separador-final-imagen #img-separador{
+            text-align:center;
+            width: 30%
+        }
+        .separador-final-imagen #img-separador img{
+            width: 50%;
+        }
+        
+        #fecha-footer {
+            margin-top:5%;
+            text-align:Center;
+            font-size: 1.2em;
+
+            font-family: Sacramento;
+        }
+
+
+
+
+
+
+        /* Animacion aparecer */
+        .titulo-papas {
+            opacity: 0; 
+            transform: translateY(20px);
+            transition: opacity 1s, transform 2s;
+        }
+        .titulo-papas.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .titulo-padrinos {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .titulo-padrinos.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .elvia, .oscar, .consuelo, .antonio {
+            opacity: 0; 
+            transform: translateY(20px);
+            transition: opacity 1s, transform 2s;
+        }
+        .elvia.visible, .oscar.visible,.consuelo.visible, .antonio.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+
+        .container-titulo-lugar {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .container-titulo-lugar.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .tarjeta-lugar {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .tarjeta-lugar.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .tarjeta-lugar2 {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .tarjeta-lugar2.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        #titulo-container-detalles {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #titulo-container-detalles.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        #codigo-vestimenta {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #codigo-vestimenta.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .separador-vertical1 {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .separador-vertical1.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #imagen-vestimenta {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #imagen-vestimenta.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #texto-formal {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #texto-formal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #titulo-mesa {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #titulo-mesa.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #frase-regalos {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #frase-regalos.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .separador-vertical2 {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .separador-vertical2.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #imagen-regalo {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #imagen-regalo.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #boton-regalos {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #boton-regalos.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        #separador-final {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #separador-final.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #nota-pie {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #nota-pie.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #alex3 {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #alex3.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .separador-final-imagen {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        .separador-final-imagen.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #fecha-footer {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s, transform 2s;
+        }
+        #fecha-footer.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <section class="fondo-main">
+        <article id="fondocolor-main">
+
+            <div class="tarjeta">
+                <div id="adorno-superior"><img src="https://invitacionxv.com/wp-content/uploads/2024/03/b29cbf0b7b02bf6682dc49c081069a07-removebg-preview-1-e1710973732179.png" alt="Adorno superior"></div>
+                <div id="alex2">Alexandra</div>
+
+                <div class="separador">
+                    <div id="linea"></div>
+                    <div id="img-separador">
+                        <img src="https://cdn-icons-png.flaticon.com/512/311/311587.png" alt="">
+                    </div>
+                    <div id="linea"></div>
+                </div>
+
+                <div id="fecha1">17 DE AGOSTO DE 2024</div>
+
+                <div id="boton-abrir-invitacion">
+                    <button onclick="abrir()">
+                        Abrir Invitación
+                    </button>
+                </div>
+                <div id="adorno-inferior"><img src="https://invitacionxv.com/wp-content/uploads/2024/03/b29cbf0b7b02bf6682dc49c081069a07-removebg-preview-e1710972132755.png" alt="Adorno Inferior"></div>
+                
+            </div>
+
+        </article>
+        
+    </section>
+
+    <section class="fondo">
+        <article id="fondocolor">
+
+            <section class="container-flores">
+                <img src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-spring-flower-circle-frame-decoration-with-green-leaves-png-image_8703625.png" alt="">
+                <div>
+                    <p id="alex">Alexa</p>
+                    <p id="alex-abajo">Mis 16 años</p>
+                </div>
+            </section>
+            
+
+
+            <div id="frase">
+                <p>
+                    Hay momentos inolvidables que se atesoran en el corazón para siempre. 
+                    Con la bendición de Dios, el amor de mi familia; me siento muy feliz de 
+                    llegar a este momento de mi vida. Los invito a compartir conmigo este 
+                    día tan especial.
+                </p>
+            </div>
+
+
+            <article class="padres">
+                <div id="titulo-padres" class="titulo-papas">Mis Padres</div>
+                <div id="cont-padres">
+                    <div class="elvia">Elvia<br>Cuatepotzo Guerrero</div>
+                    <div class="oscar">Oscar<br>Meléndez Rosete</div>
+                </div>
+            </article>
+
+            <article class="padrinos">
+                <div id="titulo-padres" class="titulo-padrinos">Mis Padrinos</div>
+                <div id="cont-padres">
+                    <div class="consuelo">Consuelo<br>Perea Guzmán</div>
+                    <div class="antonio">Antonio<br>Jordán Domínguez</div>
+                </div>
+            </article>
+
+
+
+            <div id="titulo-container-lugar" class="container-titulo-lugar">
+                <div id="linea-separador">
+                    <img src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-watercolor-flower-decorative-separator-png-image_6273977.png" alt="">
+                </div>
+
+                <div id="titulo-padres">Lugar</div>
+
+                <div id="linea-separador">
+                    <img src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-watercolor-flower-decorative-separator-png-image_6273977.png" alt="">
+                </div>
+            </div>
+            
+            <article class="tarjeta-lugar">
+                <div id="misa-titulo">Misa</div>
+                <div id="tarjetita-imagen">
+                    <img src="https://turismotlaxcala.com/Atractivos/img_atractivos/Catedras-de-Nuestra-Senora-Asuncion-Galeria2.jpg" alt="">
+                    <div>Parroquia del Sagrario Santa Iglesia Catedral de Nuestra Señora de Asuncion Tlaxcala</div>
+                </div>
+
+                <div id="datos">
+                    <p id="parrafo1"><b>Hora:</b> 15:00 hrs.</p>
+                    <p><b>Dirección:</b></p>
+                    <p>Calzada San Francisco No. 1 Centro, Tlaxcala</p>
+
+                    <div id="boton-ub"><a href="https://www.google.com/maps/place/Catedral+de+Nuestra+Se%C3%B1ora+de+la+Asunci%C3%B3n+de+Tlaxcala/@19.3138958,-98.2381993,19z/data=!4m15!1m8!3m7!1s0x85cfd9392d0f6f81:0xeb10625681487c69!2sSan+Francisco+1,+Centro,+90000+Tlaxcala+de+Xicoht%C3%A9ncatl,+Tlax.!3b1!8m2!3d19.3141755!4d-98.237864!16s%2Fg%2F11c29l3ph5!3m5!1s0x85cfd93ed5ed5291:0x1a75f637c98197d9!8m2!3d19.313867!4d-98.2379148!16s%2Fg%2F1211j67f?entry=ttu"><button>Ver Ubicación</button></a></div>
+                </div>
+            </article>
+
+
+            <article class="tarjeta-lugar2">
+                <div id="misa-titulo">Recepción</div>
+                <div id="imagen-winnie">
+                    <img src="https://i.pinimg.com/originals/3a/1c/18/3a1c18117a71cfcb90164b6caa5cc92c.png" alt="">
+                </div>
+                
+
+                <div id="datos">
+                    <p id="parrafo1"><b>Hora:</b> 17:00 hrs.</p>
+                    <p><b>Dirección:</b></p>
+                    <p>Reforma No. 26, San Pedro Tlalcuapan de Nicolás Bravo, Tlax.</p>
+                
+                    <div id="boton-ub"><a href="https://www.google.com/maps?q=19.2772246,-98.1466933&z=17&hl=es"><button>Ver Ubicación</button></a></div>
+                </div>
+            </article>
+
+
+
+
+            <div id="titulo-container-detalles">
+                <div id="linea-separador">
+                    <img src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-watercolor-flower-decorative-separator-png-image_6273977.png" alt="">
+                </div>
+
+                <div id="titulo-padres">Detalles del Evento</div>
+
+
+                <div id="linea-separador">
+                    <img src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-watercolor-flower-decorative-separator-png-image_6273977.png" alt="">
+                </div>
+            </div>
+
+        
+            <div class="vestimenta">
+
+                <div id="codigo-vestimenta">
+                    Código de Vestimenta
+                </div>
+
+                <div id="separador-vertical" class="separador-vertical1"></div>
+
+                <div id="codigo-vestimenta2">
+
+                    <div id="imagen-vestimenta">
+                        <img src="https://invitacionmx.com/wp-content/uploads/2022/01/dress3.png" alt="">
+                    </div>
+                    <div id="texto-formal">
+                        <p>Formal</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+            <div class="mesa">
+                <div id="titulo-mesa">Mesa de Regalos</div>
+
+                <div id="mesa-descripcion">
+
+                    <div id="frase-regalos">
+                        Mi mayor regalo es tu presencia, pero si tu deseo es obsequiarme un detalle puedes hacerlo de la siguiente forma:
+                    </div>
+
+                    <div id="separador-vertical" class="separador-vertical2"></div>
+
+                    <div id="imagen-regalo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2731/2731865.png" alt="">
+                    </div>
+                </div>
+
+
+
+                <div id="boton-regalos">
+                    <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51485215">
+                        <button>
+                            Ver Regalos
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+
+
+
+            <footer>
+
+                <div id="separador-final">
+                    <img src="https://images.hive.blog/p/NTy4GV6ooFRmaCXZ8UYgPhoud1kjiNX8QokLEZtbBKLuLWQ9yt7K3o4FoghjrJFG3TeZ7WYd9xLX3go9L7CBwcJKXw9GyKWsir17X2LiEzu4LUHMHYVRqSTBtupekV5gMbePxssnAnwq9DU713MFVVZ6BzGdN2ZCmZ4dUM6W?format=match&mode=fit" alt="">
+                </div>
+
+                <div id="nota-pie">
+                    ¡Gracias por Acompañarme!
+                </div>
+
+
+                <div id="alex3">
+                    Alexa
+                </div>
+                <div class="separador-final-imagen">
+                    <div id="linea"></div>
+                    <div id="img-separador">
+                        <img src="https://cdn-icons-png.flaticon.com/512/311/311587.png" alt="">
+                    </div>
+                    <div id="linea"></div>
+                </div>
+
+                <div id="fecha-footer">
+                    17 - 08 - 2024
+                </div>
+
+            </footer>
+
+
+        </article>
+    </section>
+    
+
+    
+
+</body>
+
+
+<script>
+
+
+        document.addEventListener('scroll', function() {
+            const texto = document.getElementsByClassName('titulo-papas')[0];
+            const rect = texto.getBoundingClientRect();
+            const texto1 = document.getElementsByClassName('elvia')[0];
+            const texto2 = document.getElementsByClassName('oscar')[0];
+
+            const triggerPoint = window.innerHeight * 1;
+            if (rect.top <= triggerPoint) {
+                texto.classList.add('visible');
+
+                setTimeout(function() {
+                    texto1.classList.add('visible');
+                }, 500);
+                setTimeout(function() {
+                    texto2.classList.add('visible');
+                }, 1000);
+                
+            }
+
+        });
+
+
+        document.addEventListener('scroll', function() {
+            const texto = document.getElementsByClassName('titulo-padrinos')[0];
+            const rect = texto.getBoundingClientRect();
+            const texto1 = document.getElementsByClassName('consuelo')[0];
+            const texto2 = document.getElementsByClassName('antonio')[0];
+
+            const triggerPoint = window.innerHeight * 0.9;
+            if (rect.top <= triggerPoint) {
+                texto.classList.add('visible');
+
+                setTimeout(function() {
+                    texto1.classList.add('visible');
+                }, 500);
+                setTimeout(function() {
+                    texto2.classList.add('visible');
+                }, 1000);
+                
+            }
+        });
+
+
+        document.addEventListener('scroll', function() {
+            const texto = document.getElementsByClassName('container-titulo-lugar')[0];
+            const rect = texto.getBoundingClientRect();
+            const texto2 = document.getElementsByClassName('tarjeta-lugar')[0];
+
+            const triggerPoint = window.innerHeight * 0.9;
+            if (rect.top <= triggerPoint) {
+                texto.classList.add('visible');
+
+                setTimeout(function() {
+                    texto2.classList.add('visible');
+                }, 500);
+            }
+        });
+
+        document.addEventListener('scroll', function() {
+            const texto = document.getElementsByClassName('tarjeta-lugar2')[0];
+            const rect = texto.getBoundingClientRect();
+
+            const triggerPoint = window.innerHeight * 0.85;
+            if (rect.top <= triggerPoint) {
+                texto.classList.add('visible');
+
+            }
+        });
+
+
+        document.addEventListener('scroll', function() {
+            const texto = document.getElementById('titulo-container-detalles');
+            const rect = texto.getBoundingClientRect();
+
+            const texto1 = document.getElementById('codigo-vestimenta');
+            const texto2 = document.getElementsByClassName('separador-vertical1')[0];
+            const texto3 = document.getElementById('imagen-vestimenta');
+            const texto4 = document.getElementById('texto-formal');
+
+            const texto1r = document.getElementById('titulo-mesa');
+            const texto2r = document.getElementById('frase-regalos');
+            const texto3r = document.getElementsByClassName('separador-vertical2')[0];
+            const texto4r = document.getElementById('imagen-regalo');
+            const texto5r = document.getElementById('boton-regalos');
+
+
+
+            const triggerPoint = window.innerHeight * 0.8;
+            if (rect.top <= triggerPoint) {
+                texto.classList.add('visible');
+
+                setTimeout(function() {
+                    texto1.classList.add('visible');
+                }, 500);
+
+                setTimeout(function() {
+                    texto2.classList.add('visible');
+                }, 1300);
+
+                setTimeout(function() {
+                    texto3.classList.add('visible');
+                }, 2000);
+
+                setTimeout(function() {
+                    texto4.classList.add('visible');
+                }, 2500);
+
+
+
+                setTimeout(function() {
+                    texto1r.classList.add('visible');
+                }, 1500);
+
+                setTimeout(function() {
+                    texto2r.classList.add('visible');
+                }, 2300);
+
+                setTimeout(function() {
+                    texto3r.classList.add('visible');
+                }, 3000);
+
+                setTimeout(function() {
+                    texto4r.classList.add('visible');
+                }, 3500);
+
+                setTimeout(function() {
+                    texto5r.classList.add('visible');
+                }, 4000);
+            }
+        });
+
+        document.addEventListener('scroll', function() {
+            const texto = document.getElementById('separador-final');
+            const rect = texto.getBoundingClientRect();
+
+            const texto1 = document.getElementById('nota-pie');
+            const texto2 = document.getElementById('alex3');
+            const texto3 = document.getElementsByClassName('separador-final-imagen')[0];
+            const texto4 = document.getElementById('fecha-footer');
+
+
+
+
+            const triggerPoint = window.innerHeight * 0.8;
+            if (rect.top <= triggerPoint) {
+                texto.classList.add('visible');
+
+                setTimeout(function() {
+                    texto1.classList.add('visible');
+                }, 1000);
+
+                setTimeout(function() {
+                    texto2.classList.add('visible');
+                }, 1500);
+
+                setTimeout(function() {
+                    texto3.classList.add('visible');
+                }, 2000);
+
+                setTimeout(function() {
+                    texto4.classList.add('visible');
+                }, 2500);
+
+
+            }
+        });
+
+
+
+
+
+    function abrir() {
+
+        var invitacion = document.getElementsByClassName('fondo')[0];
+        var tarjeta_fondo = document.getElementsByClassName('fondo-main')[0];
+        var tarjeta = document.getElementsByClassName('tarjeta')[0];
+
+
+        tarjeta.classList.add('fade-out');
+
+        setTimeout(function() {
+            tarjeta.style.display="none";
+            tarjeta_fondo.style.display="none";
+
+
+            invitacion.style.display='block';
+            invitacion.classList.add('fade-in');
+
+
+        }, 2000);
+        
+        
+        
+        
+    }
+
+</script>
+</html>
